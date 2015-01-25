@@ -1,5 +1,5 @@
 WIP.
 ##TODO##
-* windows colors
+* google colors
 * flat ui colors
 * holiday & event colors
