@@ -1,5 +1,7 @@
 A growing collection of most popular color palettes.
 
+http://laochao.github.io/Colors/
+
 Color palettes included
 -----------------------
 
