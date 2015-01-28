@@ -4,17 +4,17 @@ Color palettes included
 -----------------------
 
 * Material Design
-** Official
-** Un-official
+  * Official
+  * Un-official
 * Apple iOS
 * Microsoft Windows & Products
 * Brand Colors
-** Social Networks
-** Global Brands
-** Popular Websites & Services
+  * Social Networks
+  * Global Brands
+  * Popular Websites & Services
 * Flat Design
-** Flat UI Colors
-** Flattastic Pro Color Palette
+  * Flat UI Colors
+  * Flattastic Pro Color Palette
 
 ##TODO##
 * holiday & event colors
