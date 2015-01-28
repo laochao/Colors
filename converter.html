@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Colors - Find Your Favorite Colors</title>
+<title>Color Converter</title>
 <link href="css/materialize.min.css" rel="stylesheet">
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,18 +33,44 @@
 <main>
   <div class="container">
 
-          <h1 class="header">Best Color Palettes</h1>
-          <p class="flow-text">Choose a color scheme from the left side bar.</p>
-<a class="waves-effect waves-light btn">Github</a>
+          <h1 class="header">Color Converter</h1>
+          <p class="flow-text">HEX to RGB and RGB to HEX color converter.</p>
+          <div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s4">
+        <input id="color-converter" type="text">
+        <label for="color-converter">Enter rgb or hex value:</label>
+      </div>
+      <div class="input-field col s8">
+        <div id="rgbHex-color"></div>
+<div id="rgbHex-output"></div>
+      </div>
+    </div>
+  </form>
+</div>
   </div>
 </main>
 <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script> 
-<script src="js/materialize.min.js"></script> 
+<script src="js/materialize.min.js"></script>
+<script src="js/rgbHex.min.js"></script> 
 <script>
 (function($){
   $(function(){
 
     $('.button-collapse').sideNav();
+	$('#color-converter').keyup(function(){
+                    var val = $.rgbHex($('#color-converter').val());
+
+                    if(val) {
+                        $('#rgbHex-output').html(val + '&nbsp;&nbsp;');
+                        $('#rgbHex-color').css({display:'inline-block', backgroundColor: val});
+                    }
+                    else {
+                        $('#rgbHex-output').html("Invalid value.");
+                        $('#rgbHex-color').hide()
+                    }
+                });
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
