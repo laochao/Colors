@@ -17,6 +17,7 @@ Color palettes included
 * Flat Design
   * Flat UI Colors
   * Flattastic Pro Color Palette
+* holiday & event colors
 
 ##TODO##
-* holiday & event colors
+* confortable background colors
